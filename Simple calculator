@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+float a,b=0;
+int x=0;
+char op,y;
+cout<<"Enter First Number : ";
+cin>>a;
+cout<<"Enter Second Number : ";
+cin>>b;
+while (x == 0) {
+cout<<"Enter Operator : ";
+cin>>op;
+switch (op) {
+    case '+':
+    cout<<"The answer is : "<<a+b;
+    x++;
+    break;
+    case '-':
+    cout<<"The answer is : "<<a-b;
+    x++;
+    break;
+    case '*':
+    cout<<"The answer is : "<<a*b;
+    x++;
+    break;
+    case '/':
+    cout<<"The answer is : "<<a/b;
+    x++;
+    break;
+}
+}
+cout<<endl<<endl<<endl<<"Do you want to calculate more? : (y/n)"<<endl<<endl;
+cin>>y;
+cout<<endl<<endl;
+if (y=='y'){
+    system("cls");
+    main();
+}
+return 0;
+}

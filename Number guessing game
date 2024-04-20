@@ -1,0 +1,33 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main() {
+
+srand(time(NULL)); //This is to produce a new random number everytime the program is executed.//
+int x = rand() % 100;
+int y,s,pause;
+
+cout<<"A Integer has been generated between 1-100."<<endl<<"Try to guess the randomly generated number."<<endl<<endl;
+
+while (s=1){
+
+cout<<"Enter a guess."<<endl<<endl;
+cin>>y;
+
+if (y==x) {
+    break;
+} else if (y<x) {
+    cout<<endl<<"Your guess is Lower than the randomly generated number"<<endl<<endl;
+} else {
+    cout<<endl<<"Your guess is Greater than the randomly generated number"<<endl<<endl;
+}
+
+}
+cout<<"-------------------------------";
+cout<<"The Number was : "<<x;
+cout<<"-------------------------------";
+cin>>pause;//This is just here to stop the game.//
+
+return 0;
+}
